@@ -28,7 +28,7 @@ class ProductRepositoryTest {
         Product productSaved = this.productRepository.save(product);
         Assertions.assertThat(productSaved).isNotNull();
         Assertions.assertThat(productSaved.getId()).isNotNull();
-        Assertions.assertThat(productSaved.getName()).isEqualTo(product.getName());
+        Assertions.assertThat(productSaved.getName()).isEqualTo("top");
     }
     @Test
     @DisplayName("Test update product when successful")
